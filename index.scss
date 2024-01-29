@@ -1,0 +1,167 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$color-primary1:#26BAA4;
+$color-primary2:#6173FF;
+$color-primary3: #4c5460;
+$color-primary4:#9FABB2;
+$fontfamily: 'Bai Jamjuree', sans-serif;
+$font-size-base: x-large;
+$font-weight: bold;
+
+@mixin boutton 
+{
+        display: inline;
+        color: white;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+}
+body
+   {
+    margin:0px;
+    padding:0px;
+    font-family:$fontfamily;
+   }
+
+header
+    {
+        padding: 5px;
+        background-image:url("images/bg-header-desktop.png");
+        background-size: cover;  
+        background-repeat:no-repeat;
+        justify-content: center;
+        font-size:x-large;
+        font-weight: bold;
+    }    
+.navbar
+    {
+        text-align: right;
+        font-size:large;
+        margin-right: 40px;
+        letter-spacing:2px;
+    }
+nav
+    {
+        flex-direction: column;
+        align-items: center;
+    }    
+
+main 
+    {
+       justify-content:space-evenly;
+    }
+section
+      {
+        flex-direction: column;
+      }
+aside
+    {
+       justify-content:space-evenly;
+    }
+
+p , ol
+{
+    font-weight: $font-weight; 
+}
+.titre
+{
+    font-weight: $font-weight;
+    background-color:$color;
+    color:white;
+    padding:5px;
+    border: 1px solid;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#button1
+{
+    background-color:$color-primary1;
+    @include boutton; 
+}
+#button2
+{
+    background-color:$color-primary2;
+    @include boutton; 
+}
+h3
+{
+  text-align: center;
+  text-decoration: underline;
+  color:$color-primary3;
+}
+
+footer
+{
+    justify-content: center;
+    font-size:x-large;
+    font-weight:$font-weight;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color:$color;
+    color: white;
+    text-decoration: underline;
+}
+
+
+/*Formulaire contact*/
+
+.contact{
+    margin-top: 50px;
+    margin-left: 550px;
+    width: 500px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 0 30px 0 30px;
+    background:hsl(201, 11%, 66%);
+    }
+
+form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 63px;
+    margin-top: 30px;
+    }
+    
+form div > label {
+    margin-bottom: 5px;
+    font-weight: 650;
+    }
+        
+form div > textarea {
+    height: 195px;
+    padding: 15px 0px 0px 10px;
+    }
+            
+form div:last-child {
+    align-items:center;
+    margin-top: 20px;
+    }
+    
+form button {  
+    margin-left:125px;    
+    width: 250px;
+    max-width: 500px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 28px;
+    border: rgba(48, 48, 48, 0.5) solid 1px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    color: #303030;
+    }
+
+@media screen and (max-width: 768px){
+        main {
+          flex-direction: column;
+          flex-wrap: wrap;
+         }
+         aside{
+            align-items:baseline;
+         }
+
+}
