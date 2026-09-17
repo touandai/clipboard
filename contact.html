@@ -1,60 +1,238 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="AFRIK-DESIGN">
-    <title>Contact AFRIK-DESIGN START-UP</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="asset/bootstrap.min.css" rel="stylesheet">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Contactez AFRIK-DESIGN pour toute question concernant Clipboard."
+    >
+
+    <title>Contact | AFRIK-DESIGN START-UP</title>
+
     <link rel="stylesheet" href="index.css">
-    <script src="asset/jquery.js" defer></script>
-    <script src="contacts.js" defer></script>
-    
+
 </head>
 
+
 <body>
-    <header id="logo" class="container">
-        <p>AFRIK-DESIGN --- START-UP</p>
-    </header>
-    
-    <main id="content" class="container">
 
-        <aside class="container">
-           <a href="index.html">Accueil</a>
-        </aside>
 
-        <section id="contact" class="container">
-            <h1>Contactez-nous</h1>
+<header class="site-header">
 
-                <p>Avez-vous des questions ou remarques ? Nous joindre via ce formulaire!</p>
-                
-                    <form id="formulaire">
+    <div class="header-inner">
 
-                        <div class="control">
-                        <label for="nom">Nom </label>
-                        <input class="form-control" type="text" id="nom" name="nom" placeholder="Martin" minlength="3" maxlength="15" size="15" />
-                        <small>Vous devez saisir obligatoirement votre Nom</small>
-                        </div>
+        <a href="index.html" class="logo">
 
-                        <div class="control">
-                        <label for="email">Votre Email </label>
-                        <input class="form-control" type="email" id="email" name="email"/>
-                        <small>Vous devez saisir obligatoirement votre Email</small>
-                        </div>
+            <span class="logo-main">
+                AFRIK-DESIGN
+            </span>
 
-                        <div class="control">
-                        <label for="message">Votre message </label>
-                        <textarea class="form-control" id="message" name="message" placeholder="écrivez votre message..."></textarea>
-                        <small>Champ à saisir obligatoirement</small>
-                        </div>
-                        <br>
-                        <button type="submit" id="envoyer">Valider</button>
-                    </form>
-        </section>
-    
-    </main>    
-    
-    <footer class="container">
-        <p>Tout droit reservé copyright</p>
-        </footer>
+            <span class="logo-sub">
+                START-UP
+            </span>
+
+        </a>
+
+
+        <nav class="navigation">
+
+            <a href="index.html">
+                Accueil
+            </a>
+
+            <a href="contact.html" class="active">
+                Contact
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="contact-page">
+
+
+    <section class="contact-hero">
+
+        <span class="hero-badge">
+            AFRIK-DESIGN
+        </span>
+
+        <h1>
+            Contactez-nous
+        </h1>
+
+        <p>
+            Une question concernant Clipboard ?
+            <br>
+            Nous sommes à votre écoute.
+        </p>
+
+    </section>
+
+
+    <section class="contact-section">
+
+
+        <div class="contact-info">
+
+            <span class="small-title">
+                BESOIN D'AIDE ?
+            </span>
+
+            <h2>
+                Parlons de votre besoin
+            </h2>
+
+            <p>
+                Remplissez le formulaire et envoyez-nous votre message.
+                Notre équipe pourra vous répondre concernant Clipboard,
+                son installation ou son utilisation.
+            </p>
+
+
+            <div class="contact-point">
+
+                <strong>Clipboard</strong>
+
+                <span>
+                    Votre outil pour gérer facilement
+                    vos textes copiés.
+                </span>
+
+            </div>
+
+
+            <div class="contact-point">
+
+                <strong>AFRIK-DESIGN</strong>
+
+                <span>
+                    Solution développée pour simplifier
+                    votre travail quotidien.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h2>
+                Envoyer un message
+            </h2>
+
+
+            <form id="formulaire">
+
+
+                <div class="control">
+
+                    <label for="nom">
+                        Nom
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nom"
+                        name="nom"
+                        placeholder="Votre nom"
+                        minlength="3"
+                        maxlength="50"
+                    >
+
+                    <small>
+                        Vous devez saisir votre nom.
+                    </small>
+
+                </div>
+
+
+                <div class="control">
+
+                    <label for="email">
+                        Adresse e-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="vous@example.com"
+                    >
+
+                    <small>
+                        Vous devez saisir votre adresse e-mail.
+                    </small>
+
+                </div>
+
+
+                <div class="control">
+
+                    <label for="message">
+                        Votre message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Écrivez votre message..."
+                    ></textarea>
+
+                    <small>
+                        Vous devez saisir votre message.
+                    </small>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    id="envoyer"
+                >
+                    Envoyer le message
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div>
+        <strong>AFRIK-DESIGN</strong>
+        <span> | </span>
+        Clipboard
+    </div>
+
+    <p>
+        © 2026 AFRIK-DESIGN — Tous droits réservés.
+    </p>
+
+</footer>
+
+
+<script src="asset/jquery.js" defer></script>
+<script src="contacts.js" defer></script>
+
+</body>
+</html>
